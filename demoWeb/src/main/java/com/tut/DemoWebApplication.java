@@ -11,11 +11,8 @@ public class DemoWebApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoWebApplication.class, args);
-		
-//		System.out.println("Hello");
+
 		SessionFactory factory=new Configuration().configure().buildSessionFactory();
-//		factory.openSession();
-//		System.out.println(factory);
 		Student st=new Student();
 		st.setId(1);
 		st.setName("Abhay");
